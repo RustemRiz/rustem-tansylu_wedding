@@ -511,7 +511,7 @@ figure {
 #fh5co-event .event-wrap .event-col {
   width: 50%;
   float: left;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 }
 
 #fh5co-counter {
