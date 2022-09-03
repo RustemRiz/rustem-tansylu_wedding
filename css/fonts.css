@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'Imperial';
+  src: url('../fonts/Imperial.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HansHand';
+  src: url('../fonts/HansHand.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Kobzar';
+  src: url('../fonts/Kobzar.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Larisa script';
+  src: url('../fonts/Larisa script.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monplesir';
+  src: url('../fonts/Monplesir.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
