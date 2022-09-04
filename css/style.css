@@ -117,7 +117,7 @@ figure {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "Monplesir", Arial, serif;
+  font-family: "Monplesir script", Arial, serif;
 }
 
 .fh5co-nav span {
@@ -957,7 +957,7 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
-  font-family: "Monplesir", Arial, serif;
+  font-family: "Monplesir script", Arial, serif;
 }
 
 @media screen and (max-width: 768px) {
@@ -1203,7 +1203,7 @@ form label {
 }
 
 .couple-half h3 {
-  font-family: "Monplesir", Arial, serif;
+  font-family: "Monplesir script", Arial, serif;
   color: #F14E95;
   font-size: 30px;
 }
@@ -1346,7 +1346,7 @@ form label {
   line-height: 1.5;
   font-weight: bold;
   color: #F14E95;
-  font-family: "Monplesir", Arial, serif;
+  font-family: "Monplesir script", Arial, serif;
 }
 
 @media screen and (max-width: 768px) {
