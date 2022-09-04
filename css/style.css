@@ -1065,6 +1065,14 @@ form label {
   margin-bottom: 2em;
 }
 
+@media screen and (max-width: 480px) {
+  .simply-countdown {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .simply-countdown>.simply-section {
   /* coutndown blocks */
   display: inline-block;
@@ -1133,6 +1141,7 @@ form label {
   padding: 7em 0;
   clear: both;
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -1537,7 +1546,7 @@ form label {
 }
 
 #fh5co-started .form-control {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.3);
   border: none !important;
   color: #fff;
   font-size: 16px !important;
@@ -1579,6 +1588,7 @@ form label {
   font-weight: 400;
   padding-left: 50px;
   padding-right: 50px;
+  border-radius: 16px;
 }
 
 #fh5co-started .form-inline .form-group {
@@ -1609,6 +1619,10 @@ form label {
 
 #fh5co-footer .copyright .block {
   display: block;
+}
+
+#fh5co-footer {
+  background-color: #000e;
 }
 
 .owl-carousel .owl-controls .owl-dot span {
@@ -2121,7 +2135,35 @@ form label {
 }
 
 .js .animate-box {
-  opacity: 0;
+  /* opacity: 0; */
 }
+
+#greetings {
+  /* margin: 8px 15px -30px; */
+  padding: 16px;
+  background-color: #4BB543;
+  color: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease-in;
+  position: absolute;
+  width: calc(100%);
+  position: fixed;
+  bottom: 4px;
+}
+
+#greetings.transformed {
+  opacity: 0;
+  transform: translate3d(0, 20px, 0);
+}
+
+#fh5co-started input.show-error:invalid {
+  color: #f43 !important;
+  background-color: #fddc;
+}
+
+#fh5co-started input.show-error:invalid::placeholder {
+  color: #f43 !important;
+}
+
 
 /*# sourceMappingURL=style.css.map */

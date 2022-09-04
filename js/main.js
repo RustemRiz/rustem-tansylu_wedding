@@ -222,8 +222,6 @@
 		const phone = searchParams.get('phone');
 		const side = searchParams.get('side');
 
-		console.log(fullName,onlyNames, namesForInput, phone,side);
-
 		const guestNamesEl = document.getElementById('guests_names');
 		if (guestNamesEl && onlyNames)	guestNamesEl.innerText = onlyNames;
 		const nameInputEl = document.getElementById('name');
