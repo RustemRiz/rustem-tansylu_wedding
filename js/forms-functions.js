@@ -7,6 +7,9 @@ const showGreetings = function() {
 }
 
 const	onClickSubmit = function(isAttending) {
+    const pageSearchParams = new URLSearchParams(window.location.search);
+    const side = pageSearchParams.get('side');
+
 		const url = new URL('https://docs.google.com/forms/u/1/d/e/1FAIpQLSfBaEGf7rTF3KFRIsLUQNRWFqNfNR0yZnBLRklvLldtgBq6-w/formResponse?usp=pp_url&submit=Submit');
     const searchParams =  url.searchParams;
 
@@ -14,7 +17,6 @@ const	onClickSubmit = function(isAttending) {
     const name = nameEl?.value;
 		const phoneEl = document.getElementById('phone');
 		const phone = phoneEl?.value;
-    const side = searchParams.get('side');
     if (!name || !phone) {
       nameEl.classList.add('show-error');
       phoneEl.classList.add('show-error');
@@ -33,7 +35,6 @@ const	onClickSubmit = function(isAttending) {
     searchParams.set('entry.380884640', isAttending ? 'Да' : 'Нет');
     console.log(url);
     try {
-
       fetch(url)
         .finally(() => {
           showGreetings();
