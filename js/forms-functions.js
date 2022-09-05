@@ -21,6 +21,12 @@ const	onClickSubmit = function(isAttending) {
       return;
     }
 
+    // Дизейблим кнопки
+    const noBtn = document.getElementById('btn-no');
+    if (noBtn) noBtn.disabled = true;
+    const yesBtn = document.getElementById('btn-yes');
+    if (yesBtn) yesBtn.disabled = true;
+
     searchParams.set('entry.761860465', name);
     searchParams.set('entry.1155097684', phone);
     if (side) searchParams.set('entry.1663727652', side);
@@ -29,11 +35,6 @@ const	onClickSubmit = function(isAttending) {
     try {
 
       fetch(url)
-        .then(() => {
-          console.log('success')
-        })
-        .catch((e)=> {
-        })
         .finally(() => {
           showGreetings();
         })

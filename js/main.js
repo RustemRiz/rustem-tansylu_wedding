@@ -217,7 +217,8 @@
 		const searchParams = new URLSearchParams(window.location.search);
 		const fullName = searchParams.get('name');
 		
-		const onlyNames = fullName?.slice(0, fullName.indexOf('_')).split(',').join(' & ');
+		const namesStr =  fullName?.includes('_') ?  fullName?.slice(0, fullName.indexOf('_')) : fullName;
+		const onlyNames = namesStr?.split(',').join(' & ');
 		const namesForInput = fullName?.replace(',', ', ').replace('_', ' ');
 		const phone = searchParams.get('phone');
 		const side = searchParams.get('side');
