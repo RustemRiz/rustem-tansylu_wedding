@@ -161,6 +161,9 @@
 		counter();
 		counterWayPoint();
 		fillValuesFromSearchParams();
+		console.log(LogRocket);
+		console.log(window.LogRocket);
+		qwe();
 	});
 
 
